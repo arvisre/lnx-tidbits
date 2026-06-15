@@ -24,7 +24,7 @@ In the file, 006_bash-basic-concept01.md, I learnt how the **Shell (bash)** call
 
 ## CASE 2: What is **cd** was an external command: </br>  
 1. If the command **cd** was an external command, all of the 1-5 points mentioned in CASE 1 will happen.  
-2. The **Child Process** will find **cd** in some directory and then will become **cd**, and change to the directory in the argument.
+2. The **Child Process** will find **cd** in some directory and then will become **cd**, and change to the directory **/home/as**.
 3. But none of these tasks are going to have any effect on the parent **Shell** because, the parent **Shell** is going to come out of **wait()** and print a new prompt.
 
 **So both CASE 1 and CASE 2 are not going to give me the expected outcome.** </br>  
