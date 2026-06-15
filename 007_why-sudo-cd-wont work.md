@@ -28,4 +28,4 @@ In the file, 006_bash-basic-concept01.md, I learnt how the **Shell (bash)** call
 3. But none of these tasks are going to have any effect on the parent **Shell** because, the parent **Shell** is going to come out of **wait()** and print a new prompt.
 
 **So both CASE 1 and CASE 2 are not going to give me the expected outcome.** </br>  
-These are the reasons why **sudo cd** is not going to work.  
+These are the reasons why **sudo cd** is not going to work and the reason for **"The directory of a child process can never affect the parent shell's working directory. This is a fundamental Unix/Linux design principle."** 
