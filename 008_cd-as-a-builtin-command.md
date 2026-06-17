@@ -13,4 +13,4 @@ For a builtin command like **cd**, the **Shell (bash)** takes a different approa
 The following (generated) image describes the difference: </br>  
 <img width="734" height="291" alt="image" src="https://github.com/user-attachments/assets/866e7d4d-83db-4e99-a395-b75e7cb06844" /> </br>  
 
-### This is how the **Shell (bash))** treats **builtin** commands.
+### This is how the **Shell (bash)** treats **builtin** commands.
