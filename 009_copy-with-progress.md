@@ -33,4 +33,8 @@ Hence, I am going to combine the **sync** command with the **rsync** command to 
 When the **rsync** command is combined with the **sync** command, the prompt returns only after the copy process is complete. This is a visual cue when to eject the USB stick. Image below:. </br>  
 <img width="1055" height="255" alt="Screenshot From 2026-07-19 19-13-30" src="https://github.com/user-attachments/assets/e5fd498f-606c-43ae-9f3b-1280df04462c" /> </br>  
 
+## One notable difference rsync vs cp: </br>  
+As shown in the image below, the rsync command with -a option preserves the file's metadata. The copied ISO file retained the **modified date** when using the **rsync** command with the **-a** option. The simple **cp** command shows the current time as the **modified date**. </br>  
+<img width="766" height="830" alt="Screenshot From 2026-07-19 19-21-21" src="https://github.com/user-attachments/assets/b7a1f360-7bf5-4141-8d18-088cc1304d17" /> </br>  
+
 
