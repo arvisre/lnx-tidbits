@@ -17,5 +17,8 @@ After executing the **cp** command, I executed the **sync** command. Then from t
 I am going to do the same process, but this time I'm going to run the **date** command to find out how long it took. </br>  
 <img width="1153" height="335" alt="Screenshot From 2026-07-19 16-11-30" src="https://github.com/user-attachments/assets/7e2bef73-8158-41c0-b81b-a0dec9cb3475" /> </br>  
 It took almost two and a half minutes to complete the job. </br>  
+**NOTE** - When the **sync** command is executed, the control does NOT return until the job finishes. Only when the sync completes do I see the prompt. </br>  
 I am now going to combine the commands with the "**&&**" operator such that the second command/condition **sync** executes/is-true only when the first command/condition **cp** executes/is-true. </br>  
 <img width="1216" height="172" alt="Screenshot From 2026-07-19 16-25-59" src="https://github.com/user-attachments/assets/aa9c50e4-4203-4de3-bd9f-5aa5e5061226" /> </br>  
+
+#2. Using the command "rsync" </br>  
