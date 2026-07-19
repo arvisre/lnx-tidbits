@@ -4,7 +4,7 @@ However, when I ejected the usb stick and tried to unplug it, I was notified tha
 I was wondering whether Linux systems have a copy progress-bar feature such that similar situations can be avoided? </br>  
 
 # What's actually happened: </br>  
-It appears that when I copy a file in Linux systems, "the kernel writes to a page cache in RAM first and reports that the process is done". However, the actual "writing data to usb stick" takes place in the background and can take a few minutes". So this is the reason I could NOT eject and unplug the usb flash drive.
+It appears that when I copy a file in Linux systems, "the Kernel writes to a page cache in RAM first and reports that the process is done". However, the actual "writing data to usb stick" takes place in the background and can take a few minutes". So this is the reason I could NOT eject and unplug the usb flash drive.
 
 # How can I ensure that this situation does NOT happen again? </br>  
 Since the GUI did NOT show me a **copy-progress-bar** (or) the copy-progress-bar was tiny in some corner that I missed noticing it, I need to use the command line to ensure that the copy process happens immediately. I do NOT want to assume that the copy is completed only to find out it wasn't while unplugging the external storage device. </br>  
@@ -22,5 +22,15 @@ I am now going to combine the commands with the "**&&**" operator such that the 
 <img width="1216" height="172" alt="Screenshot From 2026-07-19 16-25-59" src="https://github.com/user-attachments/assets/aa9c50e4-4203-4de3-bd9f-5aa5e5061226" /> </br>  
 
 #2. Using the command "rsync" </br>  
-I can use the **rsync** command with the **--progress** option to display a progress-bar of the copy process. I also include the **-a** and **-h** options. The **-a** option packs a lot of options together to keep the **metadata** intact - such as copying recursively and preserving permissions, timesteps, owner and group details.
-So I'm going to use the same ISO file from the same source path and copy to the same destination path with the **rsync** command.
+I can use the **rsync** command with the **--progress** option to display a progress-bar of the copy process. I also include the **-a** and **-h** options. The **-a** option packs a lot of options together to keep the **metadata** intact - such as copying recursively and preserving permissions, timesteps, owner and group details. The **-h** is for human-readable output - say if the sizes are mentioned in bytes. </br>  
+So I'm going to use the same ISO file from the same source path and copy to the same destination path with the **rsync** command. </br>  
+The output of the **rsync** command as shown in the image:</br>  
+<img width="1050" height="252" alt="Screenshot From 2026-07-19 18-59-45" src="https://github.com/user-attachments/assets/39d48d60-2b96-4a15-87ab-b933a8832159" /> </br>  
+Similar to the **cp** command, the **rysnc** command completes the copy process in a jiffy. This is NOT possible. Hence, I tried to eject the USB stick and was display a warning notification: </br>  
+<img width="1266" height="438" alt="Screenshot From 2026-07-19 19-00-11" src="https://github.com/user-attachments/assets/951beb75-2ef1-4937-8e34-448ee54b1953" /> </br>  
+This only means that the **rsync** command works similarly to the **cp** command - "the Kernel writes to a page cache in RAM first and reports that the process is done" whereas the actual copy process takes place in the background. </br>  
+Hence, I am going to combine the **sync** command with the **rsync** command to ensure that the copy process begins immediately and that the prompt returns only after the copy process is complete. </br>  
+
+
+
+
