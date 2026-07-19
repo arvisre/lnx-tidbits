@@ -30,8 +30,6 @@ Similar to the **cp** command, the **rysnc** command completes the copy process 
 <img width="1266" height="438" alt="Screenshot From 2026-07-19 19-00-11" src="https://github.com/user-attachments/assets/951beb75-2ef1-4937-8e34-448ee54b1953" /> </br>  
 This only means that the **rsync** command works similarly to the **cp** command - "the Kernel writes to a page cache in RAM first and reports that the process is done" whereas the actual copy process takes place in the background. </br>  
 Hence, I am going to combine the **sync** command with the **rsync** command to ensure that the copy process begins immediately and that the prompt returns only after the copy process is complete. </br>  
-
-
-
-
+When the **rsync** command is combined with the **sync** command, the prompt returns only after the copy process is complete. This is a visual cue when to eject the USB stick. Image below:. </br>  
+<img width="1058" height="259" alt="Screenshot From 2026-07-19 19-13-30" src="https://github.com/user-attachments/assets/e806b601-c3eb-448e-8452-97de63fa4133" /> </br>  
 
