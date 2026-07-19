@@ -14,5 +14,4 @@ The command **sync** can be used independently after issuing the command **cp** 
 I am going to copy an ISO file from **/home/as/Downloads** to an USB stick at **/run/media/as/AS128GxFAT/ISOs/**. </br>  
 After executing the **cp** command, I executed the **sync** command. Then from the **dock** I tried to **Eject** the USB stick. This is when I encountered the notification as shown in image: </br>  
 <img width="1274" height="316" alt="Screenshot From 2026-07-19 15-04-07" src="https://github.com/user-attachments/assets/0012e57e-97ef-43b9-9385-63080559fc42" /> </br>
-I am going to do the same process, but this time combining both the commands. Also I'm going to run the **date** command to find out how long it took.
-
+I am going to do the same process, but this time combining both the commands. Also I'm going to run the **date** command to find out how long it took. </br>  
