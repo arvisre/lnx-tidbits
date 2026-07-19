@@ -22,3 +22,5 @@ I am now going to combine the commands with the "**&&**" operator such that the 
 <img width="1216" height="172" alt="Screenshot From 2026-07-19 16-25-59" src="https://github.com/user-attachments/assets/aa9c50e4-4203-4de3-bd9f-5aa5e5061226" /> </br>  
 
 #2. Using the command "rsync" </br>  
+I can use the **rsync** command with the **--progress** option to display a progress-bar of the copy process. I also include the **-a** and **-h** options. The **-a** option packs a lot of options together to keep the **metadata** intact - such as copying recursively and preserving permissions, timesteps, owner and group details.
+So I'm going to use the same ISO file from the same source path and copy to the same destination path with the **rsync** command.
